@@ -22,7 +22,12 @@ function Navbar(props) {
         {
             route: 'Home',
             pathname: '/',
-        },{
+        },
+        {
+          route:'About',
+          pathname:'/about'
+        },
+      {
             route: 'Contact',
             pathname: '/contact',
         }
