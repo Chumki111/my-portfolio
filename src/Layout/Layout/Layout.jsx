@@ -6,7 +6,10 @@ const Layout = () => {
     return (
         <div>
             <Navbar/>
+            <div className='min-h-[calc(100vh-176px)]'>
             <Outlet/>
+            </div>
+            
             <Footer/>
         </div>
     );

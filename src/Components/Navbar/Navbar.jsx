@@ -18,20 +18,28 @@ import { Link } from 'react-router-dom';
 const drawerWidth = 240;
 
 function Navbar(props) {
-    const navItems = [
-        {
-            route: 'Home',
-            pathname: '/',
-        },
-        {
-          route:'About',
-          pathname:'/about'
-        },
-      {
-            route: 'Contact',
-            pathname: '/contact',
-        }
-    ];
+  const navItems = [
+    {
+      route: 'Home',
+      pathname: '/',
+    },
+    {
+      route: 'About',
+      pathname: '/about'
+    },
+    {
+      route: 'Skills',
+      pathname: '/skills'
+    },
+    {
+      route: 'Projects',
+      pathname: '/projects'
+    },
+    {
+      route: 'Contact',
+      pathname: '/contact',
+    }
+  ];
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -50,7 +58,7 @@ function Navbar(props) {
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <Link to={item.pathname}>
-              <ListItemText primary={item.route} />
+                <ListItemText primary={item.route} />
               </Link>
             </ListItemButton>
           </ListItem>
@@ -63,8 +71,8 @@ function Navbar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      
-      <AppBar  sx={{ backgroundColor: 'black' }}>
+
+      <AppBar sx={{ backgroundColor: 'black' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -85,9 +93,9 @@ function Navbar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Link key={item} to={item.pathname}>
-              <Button  sx={{ color: '#fff' }}>
-                {item.route}
-              </Button>
+                <Button sx={{ color: '#fff' }}>
+                  {item.route}
+                </Button>
               </Link>
             ))}
           </Box>
@@ -112,7 +120,7 @@ function Navbar(props) {
       </nav>
       <Box>
         <Toolbar />
-       
+
       </Box>
     </Box>
   );
