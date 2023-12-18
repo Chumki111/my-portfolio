@@ -1,6 +1,6 @@
 import videoSource from '../../../assets/Blue Futuristic Moving Particles Cyber Monday Sale Video.mp4'
 import { useTypewriter } from 'react-simple-typewriter'
-import assignmentPDF from '../../../assets/Assignment (1).pdf';
+
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -68,7 +68,7 @@ const Banner = () => {
 
 
 
-                            <a href={assignmentPDF} download> <button data-aos="flip-up" type='' className='btn w-full py-3 px-3 text-white uppercase mt-5  border-2 border-[#FF3811] rounded-full'>
+                            <a href='https://drive.google.com/uc?export=download&id=1ZcpI8ryqvllNwuNZmJsTtC2f9PoH7E4_' download target="_blank "> <button data-aos="flip-up" type='' className='btn w-full py-3 px-3 text-white uppercase mt-5  border-2 border-[#FF3811] rounded-full'>
                                 Download resume</button></a>
 
 
