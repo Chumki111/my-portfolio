@@ -6,22 +6,32 @@ import Typography from '@mui/material/Typography';
 import image from '../../assets/Capturedgf.png'
 import image2 from '../../assets/Capturdfgde.png'
 import image3 from '../../assets/Captureeeeeeeee.png'
+import { Link } from '@mui/material';
 
 const images = [
   {
     url: image,
-    title: 'Breakfast',
+   link : 'https://database-brand-assignment.web.app/',
+    title: 'Live Link',
     width: '40%',
+    github : 'https://github.com/Chumki111/brand-shop-client-side',
+    code : 'Source Code'
   },
   {
     url: image2,
-    title: 'Burgers',
-    width: '30%',
+    link : 'https://calm-plane.surge.sh/',
+    title: 'Live Link',
+    github : 'https://github.com/Chumki111/donation-campaign',
+    code : 'Source Code',
+    width: '30%'
   },
   {
     url: image3,
-    title: 'Camera',
-    width: '30%',
+    link : 'https://offline-services-sharing.web.app/',
+    title: 'Live Link',
+    github : 'https://github.com/Chumki111/crud-and-jwt-client',
+    code : 'Source Code',
+    width: '30%'
   },
 ];
 
@@ -130,7 +140,8 @@ const Projects = () => {
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
-            <Typography
+           <Link href={image.link}>
+           <Typography
               component="span"
               variant="subtitle1"
               color="inherit"
@@ -144,6 +155,23 @@ const Projects = () => {
               {image.title}
               <ImageMarked className="MuiImageMarked-root" />
             </Typography>
+           </Link>
+           <Link href={image.github}>
+           <Typography
+              component="span"
+              variant="subtitle1"
+              color="inherit"
+              sx={{
+                position: 'relative',
+                p: 4,
+                pt: 2,
+                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+              }}
+            >
+              {image.code}
+              <ImageMarked className="MuiImageMarked-root" />
+            </Typography>
+           </Link>
           </Image>
         </ImageButton>
       ))}

@@ -63,6 +63,7 @@ const Banner = () => {
                                     <LinkedInIcon className='text-white' fontSize="inherit" />
                                 </IconButton>
                                </Link>
+                            
                             </Box>
 
 
