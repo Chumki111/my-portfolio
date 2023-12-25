@@ -5,7 +5,7 @@ import About from "../Pages/Home/About";
 import Contact from "../Pages/Contact/Contact";
 import Skills from "../Pages/Home/Skills";
 import Projects from "../Pages/Home/Projects";
-
+import '../index.css'
 const Router = createBrowserRouter([
     {
       path: "/",

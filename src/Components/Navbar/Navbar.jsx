@@ -14,7 +14,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-
+import { Avatar, Stack } from '@mui/material';
+import avatar from '../../assets/profile-pic__5_-removebg-preview.png'
 const drawerWidth = 240;
 
 function Navbar(props) {
@@ -49,6 +50,7 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} >
+      
       <Typography variant="h6" sx={{ my: 2 }}>
         CHUMKI-KHATUN
       </Typography>
@@ -72,7 +74,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
 
-      <AppBar sx={{ backgroundColor: 'black' }}>
+      <AppBar sx={{ backgroundColor: '#232d3f' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -83,6 +85,10 @@ function Navbar(props) {
           >
             <MenuIcon />
           </IconButton>
+          <Stack direction="row" spacing={2}>
+     
+      <Avatar alt="Cindy Baker" src={avatar} />
+    </Stack>
           <Typography
             variant="h6"
             component="div"

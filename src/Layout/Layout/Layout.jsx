@@ -4,13 +4,11 @@ import Footer from "../../Components/Footer/Footer";
 
 const Layout = () => {
     return (
-        <div>
-            <Navbar/>
-            <div className='min-h-[calc(100vh-176px)]'>
-            <Outlet/>
-            </div>
+        <div className="bg-[#232d3f]">
             
-            <Footer/>
+            <Navbar/>
+           <Outlet/>
+         <Footer/>
         </div>
     );
 };
