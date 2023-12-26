@@ -9,10 +9,14 @@ import tailwind from '../../assets/Skills/Tailwind.svg'
 import router from '../../assets/Skills/Router.png'
 import react from '../../assets/Skills/React.svg'
 import js from '../../assets/Skills/JS.svg'
-import mongodb from '../../assets/Skills/MongoDb.png'
+// import mongodb from '../../assets/Skills/MongoDb.png'
 import nodeJs from '../../assets/Skills/NodeJs.png'
 import expressJs from '../../assets/Skills/Express.png'
 import firebase from '../../assets/Skills/Firebase.png'
+import Lottie from 'lottie-react';
+import lottieAnimate from '../../assets/Animation - 1703527069984.json'
+import htmlAnimated from '../../assets/Animation - 1703527718703.json'
+import mongodb from '../../assets/Animation - 1703527995682.json'
 const Skills = () => {
   useEffect(() =>{
     Aos.init()
@@ -194,13 +198,15 @@ const Skills = () => {
         Frontend Technologies
         </h2>
         <div className="flex flex-wrap gap-3 mb-20 md:justify-start justify-center items-center mt-7" data-aos="fade-down-right">
-          <img src={html } className="max-w-[70px]" alt="" />
+         
+          <Lottie  animationData={htmlAnimated} style={{ width: '90px', height: '90px' }}></Lottie>
           <img src={css} className="max-w-[70px]" alt="" />
           <img
             src={bootstrap}
             className="max-w-[70px] hover:bg-blue-600"
             alt=""
           />
+          
           <img
             src={tailwind}
             className="max-w-[70px]"
@@ -212,7 +218,8 @@ const Skills = () => {
             alt=""
           />
           <img src={js} className="max-w-[70px]" alt="" />
-          <img src={react} className="max-w-[70px]" alt="" />
+          {/* <img src={react} className="max-w-[70px]" alt="" /> */}
+          <Lottie  animationData={lottieAnimate} style={{ width: '90px', height: '90px' }}></Lottie>
         </div>
       </div>
       <div className="mt-5">
@@ -220,11 +227,12 @@ const Skills = () => {
         Backend Technologies
         </h2>
         <div className="flex flex-wrap gap-3 md:justify-end justify-center items-center mt-7" data-aos="zoom-in">
-          <img
+          {/* <img
             src={mongodb}
             className="max-w-[70px] hover:bg-[]"
             alt=""
-          />
+          /> */}
+          <Lottie  animationData={mongodb} style={{ width: '100px', height: '100px' }}></Lottie>
           <img
             src={nodeJs}
             className="max-w-[80px] "

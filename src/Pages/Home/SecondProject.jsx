@@ -1,23 +1,26 @@
-import image2 from '../../assets/Capturdfgde.png'
+import { useEffect } from 'react';
+import image2 from '../../assets/Donation-Campaign-Assignment.png'
+import Aos from 'aos';
 
 const SecondProject = () => {
+  useEffect(() =>{
+    Aos.init()
+  },[])
     const backgroundImageStyle = {
         backgroundImage: `url(${image2})`,
 };
     return (
-        <div className="max-w-[800px] rounded-xl mt-20 flex md:flex-row-reverse ml-auto flex-col bg-[#363636] shadow-lg">
+        <div className="max-w-[800px] rounded-xl mt-20 flex md:flex-row-reverse ml-auto flex-col bg-[#363636] shadow-lg" data-aos="zoom-in">
       <div
-        className="md:w-1/3 w-full rounded-r-xl bg-cover bg-top hover:bg-bottom ease-in-out duration-[3000ms] h-64 md:h-auto"
+        className="md:w-1/3 w-full rounded-r-xl bg-cover bg-top hover:bg-bottom ease-in-out duration-[3000ms] h-64 md:h-auto cursor-pointer"
         style={backgroundImageStyle}
       ></div>
 
       <div className="md:w-2/3 w-full px-6 py-4">
-        <h2 className="text-3xl font-bold mb-3 text-white">Super Hotel</h2>
+        <h2 className="text-3xl font-bold mb-3 text-white">Donation Campaign</h2>
 
         <p className="text-lg mb-4 text-gray-300">
-          A hotel booking website where users can reserve seats .User
-          authentication via JWT and a review feature for users to share their
-          experiences
+         A donation campaign website , user can view full website , user can donate .
         </p>
 
         <div className="flex flex-wrap mb-4">
@@ -26,8 +29,7 @@ const SecondProject = () => {
             <span className="text-lg font-semibold text-white mr-3">
               Technology:
             </span>{" "}
-            HTML, Tailwind CSS, React.js, Firebase, JWT, MongoDB, Express.js,
-            Node.js
+            HTML, Tailwind CSS, Daisy Ui , Sweetalert
           </span>
         </div>
 

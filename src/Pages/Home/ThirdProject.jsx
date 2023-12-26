@@ -1,22 +1,27 @@
 
+import { useEffect } from 'react';
 import image3 from '../../assets/Offline-Services-Sharing-Web-Application.png'
+import Aos from 'aos';
 const ThirdProject = () => {
+  useEffect(() =>{
+    Aos.init()
+  },[])
     const backgroundImageStyle = {
         backgroundImage: `url(${image3})`,
 };
     return (
-        <div className="max-w-[800px] rounded-xl mt-20 flex md:flex-row flex-col bg-[#363636] shadow-lg">
+        <div className="max-w-[800px] rounded-xl mt-20 flex md:flex-row flex-col bg-[#363636] shadow-lg" data-aos="zoom-in">
       <div
         className="md:w-1/3 w-full rounded-l-xl bg-cover bg-top hover:bg-bottom ease-in-out duration-[6000ms] h-64 md:h-auto"
         style={backgroundImageStyle}
       ></div>
 
       <div className="md:w-2/3 w-full px-6 py-4">
-        <h2 className="text-3xl font-bold mb-3 text-white">Marriage Master</h2>
+        <h2 className="text-3xl font-bold mb-3 text-white">Offline Services</h2>
 
         <p className="text-lg mb-4 text-gray-300">
           User-friendly interface with variety of images and design. With user
-          authentication and marriage related service and also added the Aos
+          authentication and offline services related service and also added the Aos
           animation.
         </p>
 
@@ -26,7 +31,7 @@ const ThirdProject = () => {
             <span className="text-lg font-semibold text-white mr-3">
               Technology:
             </span>{" "}
-            HTML, Tailwind CSS, React.js, Firebase , Daisy Ui
+            HTML, Tailwind CSS, React.js, Firebase , Daisy Ui,Swiper.js
           </span>
         </div>
         <div className="flex items-center  gap-5">

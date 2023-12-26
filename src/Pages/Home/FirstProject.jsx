@@ -1,24 +1,27 @@
 
+import { useEffect } from 'react';
 import image from '../../assets/Capturedgf.png'
+import Aos from 'aos';
 
 const FirstProject = () => {
+  useEffect(() =>{
+    Aos.init()
+  },[])
     const backgroundImageStyle = {
         backgroundImage: `url(${image})`,
 };
     return (
-        <div className="max-w-[800px] rounded-xl mt-20 flex md:flex-row flex-col bg-[#363636] shadow-lg">
+        <div className="max-w-[800px] rounded-xl mt-20 flex md:flex-row flex-col bg-[#363636] shadow-lg" data-aos="zoom-in">
       <div
-        className="md:w-1/3 w-full rounded-l-xl bg-cover bg-top hover:bg-bottom ease-in-out duration-[6000ms] h-64 md:h-auto"
+        className="md:w-1/3 w-full rounded-l-xl bg-cover bg-top hover:bg-bottom ease-in-out duration-[6000ms] h-64 md:h-auto cursor-pointer"
         style={backgroundImageStyle}
       ></div>
 
       <div className="md:w-2/3 w-full px-6 py-4">
-        <h2 className="text-3xl font-bold mb-3 text-white">TechRaddar</h2>
+        <h2 className="text-3xl font-bold mb-3 text-white">BrandShop</h2>
 
         <p className="text-lg mb-4 text-gray-300">
-          Discover trending tech products, vote, and leave reviews. Manage your
-          products, explore admin and moderator dashboards, and use tags for
-          easy searching.
+          Discover brand in BrandShop , add brand , see details brand , delete brand and updated your brand . 
         </p>
 
         <div className="flex flex-wrap mb-4">

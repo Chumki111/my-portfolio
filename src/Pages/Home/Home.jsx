@@ -1,3 +1,4 @@
+import Contact from "../Contact/Contact";
 import About from "./About";
 import Banner from "./Banner/Banner";
 import Projects from "./Projects";
@@ -10,6 +11,7 @@ const Home = () => {
             <About/>
             <Skills/>
             <Projects/>
+            <Contact/>
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Footer = () => {
 
    
     return (
-        <Box className="bg-black px-2 py-6">
+        <Box className="bg-[#232d3f] shadow-lg px-2 py-6">
             <Container>
                 <Box className="w-full text-center" sx={{
                         '& svg': {
@@ -22,10 +22,10 @@ const Footer = () => {
                             <FacebookIcon />
                         </IconButton>
                         <IconButton>
-                            <TwitterIcon />
+                            
                         </IconButton>
                         <IconButton>
-                            <YouTubeIcon />
+                           
                         </IconButton>
                         <IconButton>
                             <LinkedInIcon />
