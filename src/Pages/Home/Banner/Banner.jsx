@@ -106,6 +106,7 @@ const Banner = () => {
       </div>
       <div className="fronted ">
           <a
+          // href="https://drive.google.com/uc?export=download&id=1ZcpI8ryqvllNwuNZmJsTtC2f9PoH7E4_" 
             href="/Chumki Khatun (resume).pdf" 
             download="Chumki_Khatun_Resume.pdf" 
             className="btn-resume bg-blue-600 mt-6 border-blue-600 border-2 hover:bg-[#232D3F] rounded-3xl  text-white font-bold lg:py-3 py-2 lg:px-6 px-4 md:text-base text-sm lg:text-lg focus:outline-none focus:shadow-outline inline-block"
